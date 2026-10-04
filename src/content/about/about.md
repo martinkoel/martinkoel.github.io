@@ -7,7 +7,7 @@ This content will be displayed at the top of the index page.
 You can leave this empty if you don’t want to show any content.
 -->
 
-Hi! I'm Martin Koel. I blog about things I find interesting and think are worth sharing, usually somewhere between creativity and technology.
+Hi! I'm Martin. I blog about things I find interesting and think are worth sharing, usually somewhere between creativity and technology.
 
 In my spare time you'll find me making things with 3D modelling and CNC machines, tinkering with programming ideas, playing with our pets, or exploring the city and countryside by foot or bicycle.
 
