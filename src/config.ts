@@ -4,7 +4,7 @@ export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
     website: 'https://koel.cc/', // Site domain
-    title: 'Martin\'s Blog', // Site title
+    title: '\- MARTIN\'S BLOG \-', // Site title
     author: 'Martin', // Author name
     description: 'Martin\'s Blog', // Site description
     language: 'en-US' // Default language
@@ -15,8 +15,8 @@ export const themeConfig: ThemeConfig = {
     contentWidth: '35rem', // Content area width
     centeredLayout: true, // Use centered layout (false for left-aligned)
     themeToggle: false, // Show theme toggle button (uses system theme by default)
-    postListDottedDivider: false, // Show dotted divider in post list
-    footer: true, // Show footer
+    postListDottedDivider: true, // Show dotted divider in post list
+    footer: false, // Show footer
     fadeAnimation: true // Enable fade animations
   },
 
