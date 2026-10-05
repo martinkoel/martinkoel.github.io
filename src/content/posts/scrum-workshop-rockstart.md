@@ -1,10 +1,8 @@
 ---
 title: 'Scrum workshop for startups at Rockstart'
-pubDate: '2018-12-19'
+pubDate: '2012-05-23'
 ---
-## The workshop
-
-Today, together with Timo Mulder, I gave a Scrum workshop for some very enthusiastic startups like Peerby.
+Together with Timo Mulder I facilitated a Scrum workshop for some very enthusiastic startups like [Peerby](https://www.peerby.com/) at [Rockstart](https://rockstart.com/).
 ![_Rockstart Workshop](./_assets/rockstart5.jpg)
 
 ## Theory that really works
