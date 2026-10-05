@@ -4,7 +4,7 @@ export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
     website: 'https://martinkoel.github.io', // Site domain
-    title: '\- MARTIN\'S BLOG \-', // Site title
+    title: 'MARTIN\'S BLOG', // Site title
     author: 'Martin', // Author name
     description: 'Martin\'s Blog', // Site description
     language: 'en-US' // Default language
@@ -12,7 +12,7 @@ export const themeConfig: ThemeConfig = {
 
   // GENERAL SETTINGS ////////////////////////////////////////////////////////////////////////////////////
   general: {
-    contentWidth: '35rem', // Content area width
+    contentWidth: '40rem', // Content area width
     centeredLayout: true, // Use centered layout (false for left-aligned)
     themeToggle: false, // Show theme toggle button (uses system theme by default)
     postListDottedDivider: true, // Show dotted divider in post list
