@@ -1,0 +1,36 @@
+---
+import Layout from '../../components/Layout.astro';
+import TripCard from '../../components/TripCard.astro';
+import CircleCarousel from '../../components/CircleCarousel.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../data/site';
+
+const trips = (await getCollection('trips')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const circlePhotos = trips
+  .flatMap((t) => (t.data.circlePhotos.length > 0 ? t.data.circlePhotos : t.data.gallery))
+  .filter((src) => /\.(jpe?g|png|webp)(\?|$)/i.test(src))
+  .slice(0, 9)
+  .map(withBase);
+---
+
+<Layout
+  title="Speaking"
+  description="Speaker topics."
+>
+  <section class="section">
+    <div class="container">
+      <div class="travel-head">
+        <div>
+          <p class="eyebrow">Speaker</p>
+          <h1>Me as a speaker</h1>
+          <p class="muted" style="max-width: 60ch; margin: 0;">
+            I would love to speak at your event. Contact me if you are interested!
+          </p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+</Layout>

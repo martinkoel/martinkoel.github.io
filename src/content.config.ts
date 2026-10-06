@@ -1,25 +1,36 @@
-import { glob } from 'astro/loaders'
-import { defineCollection } from 'astro:content'
-import { z } from 'astro/zod'
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
+import { glob } from 'astro/loaders';
 
-const posts = defineCollection({
-  // Load Markdown and MDX files in the `src/content/posts/` directory.
-  loader: glob({ base: './src/content/posts', pattern: '**/*.{md,mdx}' }),
-  // Type-check frontmatter using a schema
-  schema: () =>
-    z.object({
-      title: z.string(),
-      // Transform string to Date object
-      pubDate: z.coerce.date(),
-      image: z.string().optional()
-    })
-})
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    description: z.string().optional(),
+    date: z.coerce.date(),
+    updated: z.coerce.date().optional(),
+    tags: z.array(z.string()).default([]),
+    coverImage: z.string().optional(),
+    category: z.enum(['tech', 'life']).default('tech'),
+    author: z.string().default('Martin'),
+    mathjax: z.boolean().default(false),
+    draft: z.boolean().default(false),
+  }),
+});
 
-const about = defineCollection({
-  // Load Markdown files in the `src/content/about/` directory.
-  loader: glob({ base: './src/content/about', pattern: '**/*.md' }),
-  // Type-check frontmatter using a schema
-  schema: z.object({})
-})
+const trips = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/trips' }),
+  schema: z.object({
+    title: z.string(),
+    place: z.string(),
+    date: z.coerce.date(),
+    summary: z.string(),
+    heroImage: z.string(),
+    gallery: z.array(z.string()).default([]),
+    circlePhotos: z.array(z.string()).default([]),
+    highlights: z.array(z.string()).default([]),
+  }),
+});
 
-export const collections = { posts, about }
+export const collections = { blog, trips };
