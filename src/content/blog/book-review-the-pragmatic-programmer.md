@@ -2,7 +2,7 @@
 title: 'Book Review: The Pragmatic Programmer'
 date: 2017-05-21
 subtitle: A classic for your shelf
-tags: [book review,people]
+tags: [book review,people, engineer growth]
 category: tech
 description: ' '
 ---
