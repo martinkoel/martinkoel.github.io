@@ -1,8 +1,8 @@
 ---
 title: 'Pregnancy Ticker has been downloaded over 100.000 times!'
 date: 2010-07-14
-subtitle: Learn from the pros
-tags: [reliability]
+subtitle: An unbelievable milestone
+tags: [app]
 category: tech
 description: ' '
 ---
